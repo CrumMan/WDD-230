@@ -1,0 +1,96 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <title>windchill calculator</title>
+    </head>
+
+<body>
+   Amount Borrowed (Principal)<br><input type="text" id="principal">    <br>
+   Annual Intrest Rate <br>(ex: .08): <input type="text" id="annualRate"> <br>
+   Number of Years<br> <input type="text" id="years"> <br>
+   Payments per year<br> <input type="text" id='periodsPerYear'><br>
+    <button type="button" onclick="doPayment ( )">Find out your payment!</button><br>
+    <p id="output1"></p>
+    Number Of Payments paid to date: <input type="text" id='numberOfPaymentPaidToDate'><br>
+    <button type="button" onclick="doBalance ( )">Find out your payoff!</button><br>
+    <p id="output2"></p>
+    <script>
+        
+        function doPayment ( ){
+             let principal = parseFloat(document.getElementById('principal').value);
+             console.log(principal);
+             let annualRate = parseFloat(document.getElementById('annualRate').value);
+             console.log(annualRate);
+             let years = parseFloat(document.getElementById('years').value);
+             console.log(years);
+             let periodsPerYear = parseFloat(document.getElementById('periodsPerYear').value);
+             console.log(periodsPerYear);
+             let text= "The payment is $"
+             let C= computePayment (principal, annualRate, years, periodsPerYear);
+             document.getElementById("output1").innerHTML = text + C.toFixed(2);
+        }
+
+function doBalance ( ){
+    let principal = parseFloat(document.getElementById('principal').value);
+             console.log(principal);
+             let annualRate = parseFloat(document.getElementById('annualRate').value);
+             console.log(annualRate);
+             let years = parseFloat(document.getElementById('years').value);
+             console.log(years);
+             let periodsPerYear = parseFloat(document.getElementById('periodsPerYear').value);
+             console.log(periodsPerYear);
+             let payment=computePayment (principal, annualRate, years, periodsPerYear);
+             console.log(payment)
+             let numberOfPaymentPaidToDate = parseFloat(document.getElementById('numberOfPaymentPaidToDate').value);
+             let text= "The payoff is $";
+             let C= computeBalance (principal, annualRate, years, periodsPerYear, numberOfPaymentPaidToDate,payment);
+             document.getElementById("output2").innerHTML = text + C.toFixed(2);
+}
+function computePayment (principal, annualRate, years, periodsPerYear){
+            //p =  ar
+             // 1 − Math.pow([1 + r],−n)
+             let periodRate=annualRate/periodsPerYear;
+             let Sum1= (1+periodRate);
+             console.log (Sum1)
+             let Sum4= periodsPerYear;
+             console.log (Sum4)
+             let Sum2= 1 - Math.pow(Sum1,-Sum4);
+             console.log (Sum2)
+             let Sum3= principal*periodRate / Sum2;
+             console.log (Sum3)
+             let paymentPerPeroiod = Sum3;
+             console.log (paymentPerPeroiod)
+             return paymentPerPeroiod;
+}
+function computeBalance (principal, annualRate, years, periodsPerYear, numberOfPaymentPaidToDate, payment){
+             // b = a * Math.pow([1 + r],d) −  p ( Math.pow([1 + r],d) − 1 )
+            //                             |           /r
+             let periodRate=annualRate/periodsPerYear;
+
+             let S1Sum1= Math.pow([1+periodRate],numberOfPaymentPaidToDate);
+             console.log(S1Sum1)
+             let S1Sum2= principal * S1Sum1;
+             console.log(S1Sum2)
+             let section1 = S1Sum2
+             let S2Sum1 = 1 + periodRate;
+             console.log(S2Sum1)
+             let s2Sum2= Math.pow(S2Sum1,numberOfPaymentPaidToDate);
+             console.log(s2Sum2)
+             let s2Sum3= s2Sum2-1;
+             console.log(s2Sum3)
+             let S2Sum4= s2Sum3 * payment;
+             console.log(S2Sum4)
+             let S2Sum5= S2Sum4/periodRate;
+             console.log(S2Sum5)
+             let section2= S2Sum5;
+             let total = section1 - section2;
+             console.log (total)
+             return total;
+}
+      </script>
+
+</body>
+
+</html>
