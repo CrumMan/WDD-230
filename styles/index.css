@@ -21,6 +21,7 @@ header{
     grid-row: 2/3;
     margin: 10px;
 }
+
 #my_name{
     grid-column:3/4;
     grid-row:2/3;
