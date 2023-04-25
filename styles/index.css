@@ -1,7 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap');
 .content{
 width: 800px;
 margin:0 auto;
-font-family: cursive, Courier;
+font-family: 'Lobster Two', cursive;
 }
 header{
     display: flex;
@@ -34,15 +35,25 @@ header{
 .lessons{
     grid-column: 2/3;
 }
+.assignment_portal{
+    background-color: rgb(216, 216, 172);
+}
 #lesson02,#lesson03,#lesson04,#lesson05,#lesson06,#lesson07,#lesson08,#lesson09,#lesson10,#lesson11{
     margin: auto;
     text-align: left;
     margin-left: 200px;
+}
+#lesson02,#lesson04,#lesson06,#lesson08,#lesson10{
+    background-color: rgb(92, 105, 43);
+}
+#lesson03,#lesson05,#lesson07,#lesson09,#lesson11{
+    background-color: rgb(160, 216, 87);
 }
 footer{
     width: 800px;
     margin:0 auto;
     text-align: center;
     background-color: rgb(128, 118, 66);
-    font-family: cursive, Courier;
+    font-family: 'Lobster Two', cursive;
+
 }
