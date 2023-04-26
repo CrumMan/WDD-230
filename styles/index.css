@@ -40,6 +40,7 @@ header{
 }
 #lesson02,#lesson03,#lesson04,#lesson05,#lesson06,#lesson07,#lesson08,#lesson09,#lesson10,#lesson11{
     margin: auto;
+    width: 600px;
 }
 #lesson02,#lesson04,#lesson06,#lesson08,#lesson10{
     background-color: rgb(92, 105, 43);
