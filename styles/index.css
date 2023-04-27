@@ -30,18 +30,17 @@ header{
 .lesson_first{
     text-align: center;
     margin:auto;
-    grid-column:2/4;
 }
+
 .lessons{
-    grid-column: 2/3;
+    text-align: left;
 }
 .assignment_portal{
     background-color: rgb(216, 216, 172);
 }
 #lesson02,#lesson03,#lesson04,#lesson05,#lesson06,#lesson07,#lesson08,#lesson09,#lesson10,#lesson11{
     margin: auto;
-    text-align: left;
-    margin-left: 200px;
+    width: 600px;
 }
 #lesson02,#lesson04,#lesson06,#lesson08,#lesson10{
     background-color: rgb(142, 163, 64);
@@ -55,5 +54,4 @@ footer{
     text-align: center;
     background-color: rgb(128, 118, 66);
     font-family: 'Lobster Two', cursive;
-
 }
