@@ -37,9 +37,8 @@ img{
 }
 footer{
     grid-row: 5;
-    grid-column: 1/5;
     margin:10px auto;
     border-radius: 30px;
     background-color: #6D8A96;
-    width:100%
+    width:100%;
 }
