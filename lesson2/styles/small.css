@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
 a{
     color: #012A36;
 }
@@ -7,6 +8,7 @@ a{
     grid-template-columns: 1fr;
     text-align: center;
     width:80%;
+    font-family: 'Kanit', sans-serif;
 }
 header{
     grid-row: 1;
