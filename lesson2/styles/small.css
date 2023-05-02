@@ -1,4 +1,6 @@
-a{color: #012A36;}
+a{
+    color: #012A36;
+}
 .content{
     margin: auto;
     display: grid;
