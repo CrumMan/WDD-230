@@ -1,0 +1,24 @@
+header{
+    background-color:aqua;
+}
+header ul{
+    background-color: blue;
+    padding-inline-start: 0px;
+}
+header ul li{
+    list-style: none;
+    width: 100%;
+}
+header ul li a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+footer{
+    background-color: aqua;
+}
+header ul li a:hover{
+background-color: blueviolet;
+}
