@@ -40,16 +40,38 @@ header ul li a{
     display: grid;
     grid-template-columns: 1fr 1fr 3fr;
 }
-/* grid row columns and rows*/
-.row1{
-    grid-row: 1/2;
+/* Audience CSS */
+.aud{
+    text-align: center;
+    margin: auto;
+    width: 80%;
+    max-width: 800px;
 }
-.row2{
-    grid-row: 2/3;
+.demographics,.motivation{
+    text-align: left;
 }
-.row3{
-    grid-row: 3/4;
+.image{
+    width: 80%;
 }
+#example-1, #example-2{
+    background-color: #f1dac4;
+    color: #493b2a;
+    padding: 10px;
+    border-radius: 10px;
+}
+/* Home CSS */
+#content{
+    margin: 10px auto;
+    width: 80%;
+    background-color: #f1dac4;
+    color:#493b2a;
+    padding:15px;
+    border-radius: 10px;
+}
+.commerce{
+    text-align: center;
+}
+/* grid row columns*/
 .column1{
     grid-column: 1/2;
 }
@@ -86,7 +108,7 @@ h1 + ul li{
     background-color: #f1dac4;
     color: #493b2a;
     border-radius: 10px;
-    padding-left: 5px;
+    padding: 15px;
 
 }
 footer{
