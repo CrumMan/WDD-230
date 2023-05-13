@@ -7,10 +7,12 @@
         display: none;
     }
     navbar{display: flex;}
-    .whitespace{
+    .col12{
         margin: 15px;
         text-decoration: none;
         color:#f1dac4;
+        grid-column: 3/4;
+        grid-row: 1/2;
     }
     #content{
         display: grid;
@@ -60,6 +62,7 @@
         display: grid;
         grid-template-columns: 1fr 2fr 1fr;
         grid-template-rows: 50px;
+        height: 30%;
     }
     .col1{
         grid-column: 1/2;
