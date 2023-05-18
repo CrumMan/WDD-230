@@ -201,3 +201,16 @@ color: #493b2a;
 }
 
 /* colors https://coolors.co/253c78-89aae6-f1dac4-493b2a */
+header{
+    text-align: center;
+    background-color: #253c78;
+}
+#meet-greet{
+    display: none;
+}
+#meet-greet.active{
+     display: block;
+     color: white;
+     padding: .5em;
+     background-color: rgba(0,0,0,0.3);
+}
