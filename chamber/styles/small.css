@@ -142,6 +142,7 @@ header ul li a{
     padding:15px;
     border-radius: 10px;
     height:300px;
+    background-image: ;
 }
 #event{
     margin: 10px auto;
@@ -213,4 +214,7 @@ header{
      color: white;
      padding: .5em;
      background-color: rgba(0,0,0,0.3);
+}
+#hero_text{
+    z-index: 1;
 }
