@@ -134,31 +134,46 @@ header ul li a{
     color: #493b2a;
 }
 
-#hero{
+div #hero{
     margin: 10px auto;
     width: 90%;
+    height: 90%;
     background-color: #f1dac4;
-    color:#493b2a;
+    color:white;
     padding:15px;
     border-radius: 10px;
-    height:300px;
-    background-image: ;
+    background-image: url(https://crumman.github.io/wdd230/chamber/images/hero_card.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
 }
+#join_hero{
+    height: 50px;
+    position: absolute;
+    right: 10px;
+    bottom: 20px;
+}
+.join_us{
+    width: 90%;
+    height: 35px;
+    margin: auto;
+}
+#join{
+    font-size:1.5em;}
 #event{
     margin: 10px auto;
     background-color: #f1dac4;
     color:#493b2a;
     padding:15px;
     border-radius: 10px;
-    height:300px;
 }
+
 #weather{
     margin: 10px auto;
     background-color: #f1dac4;
     color:#493b2a;
     padding:15px;
     border-radius: 10px;
-    height:300px;
 }
 #news_release{
     margin: 10px auto;
