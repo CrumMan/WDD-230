@@ -24,12 +24,16 @@ font-family: 'Anonymous Pro', monospace;
     .col1,.col2,.col3{
         margin: 10px;
     }
-}
-html, body{
-    height: 100%;
-    width: 100%;
-    margin: 0;
-    padding: 0;
+        
+    /* Hamburger menu stuff */
+    #navbar{display:none;}
+    #menu_open{display: block;}
+    #menu_close{display: none;}
+
+    #navbar.active{display:flex;}
+    #menu_open.active{display: none;}
+    #menu_close.active{display: block;}
+
 }
 header{
     margin: auto;
@@ -82,15 +86,6 @@ display: flex;
     grid-column: 3/4;
     grid-row: 1/2;
 }
-
-/* Hamburger menu stuff */
-#navbar{display:none;}
-#menu_open{display: block;}
-#menu_close{display: none;}
-
-#navbar.active{display:flex;}
-#menu_open.active{display: none;}
-#menu_close.active{display: block;}
 
 ul{
     list-style: none;
@@ -232,4 +227,10 @@ header{
 }
 #hero_text{
     z-index: 1;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }

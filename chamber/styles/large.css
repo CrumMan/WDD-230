@@ -6,6 +6,9 @@
     #menu_button{
         display: none;
     }
+    nav{
+        display: flex;
+    }
 #navbar{
     width: 100%;
 }
@@ -34,6 +37,7 @@
         grid-row:1/4;
         height: 90%;
     }
+
     #spotlight_1,#spotlight_2,#spotlight_3{
         height: 33%;
     }
