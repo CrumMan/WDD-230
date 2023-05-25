@@ -8,6 +8,7 @@
     <title>Chamber of Commerce Bellevue Home Page</title>
     <script src="./scripts/main.js" defer></script>
     <script src="./scripts/index.js" defer></script>
+    <script src="./scripts\windchill.js" defer></script>
     <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="./styles/small.css">
@@ -79,8 +80,9 @@
                   Weather
                 </h3>
                 <a><img src="images/weather_sunny.png" alt="weather_sunny"></a>
-                <h4>81&deg; F</h4>
-                <p>Humidity:25%<br>Sunny</p>
+                <h4>Temperature:<span id="temperature">&deg;F</span></h4>
+                <h5>Windchill: <span id="windchill"></span> 
+                Windspeed:<span id="windspeed"></span></h5>
             </div>
 
             <div id="news_release">
