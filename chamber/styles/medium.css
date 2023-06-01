@@ -67,9 +67,6 @@
         grid-row: 3/4;
         margin: 50px auto;
     }
-    img .umami_logo{
-        height: 100px;
-    }
     div #event{
         grid-column: 1/2;
         grid-row: 4/5;

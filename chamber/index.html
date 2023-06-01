@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Bellvue Nebraksa chamber of commerce main page for WDD230 2023">
     <title>Chamber of Commerce Bellevue Home Page</title>
-    <script src="./scripts/main.js" defer></script>
+    <script src="./scripts/header-footer.js" defer></script>
     <script src="./scripts/index.js" defer></script>
-    <script src="./scripts\windchill.js" defer></script>
+    <script src="./scripts/windchill.js" defer></script>
     <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="./styles/small.css">
@@ -60,6 +60,11 @@
                     Welcome to the Bellevue Chamber of Commerce
                 </h3>
             <div id="join_hero"><button>Join Now</button></div>
+            <picture class="img">
+                <source class="img" srcset="images/hero_card-200.jpg" media="(min-width:300px) and (max-width:500px)">
+                <source class="img" srcset="images/hero_card-400.jpg" media="(min-width:500px) and (max-width:700px)">
+                <img class="img" src="images/hero_card-600.jpg">
+            </picture>
             </div>
 
             <div id="join">
