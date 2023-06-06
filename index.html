@@ -4,48 +4,60 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="chamber of commerce site plan for WDD-230 spring 2023">
-    <title>Chamber of Commerce Bellevue Site Plan</title>
+    <meta name="description" content="This site contains my assignment portal. It is written by Joshua Pyle and has a link to the assinments that I am given thoughout the 2023 spring semester. Lesson 2 is about design principals">
+    <title>WDD:230 Assignment Portal -JT Pyle</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="styles/index.css">
     <script src="./scripts/main.js" defer></script>
-
-    <link rel="stylesheet" href="./styles/small.css">
-    <link rel="stylesheet" href="./styles/medium.css">
-    <link rel="stylesheet" href="./styles/large.css">
 </head>
 <body>
-    <header>
-        <div class="top_header">
-        <a><img src="images/logo.png" alt="Logo Image"></a>
-        <h1> Chamber of Commerce Site Plan</h1>
+    <div class="content">
+        <header>
+            <div class="calling_card">
+                <h1 id="my_name">JT Pyle</h1>
+                <img src="images/mypicture.jpg" id="me" alt="Me">
+            </div>
+        </header>
+            <div class="assignment_portal">
+                <h1 class="lesson_first">WDD:230 Assignment Portal</h1>
+                <hr>
+                <ul class="lessons" id="lesson02">
+                    <li>Lesson 02: <a href="lesson2/design-principles.html">Lesson 2</a></li>
+                </ul>
+                <ul class="lessons" id="lesson03">
+                    <li>Lesson 03: <a href="lesson3/index.html">Lesson 3</a></li>
+                </ul>
+                <ul class="lessons" id="lesson04">
+                    <li>Lesson 04:<a href="chamber/index.html"> Chamber</a></li>
+                </ul>
+                <ul class="lessons" id="lesson05">
+                    <li>Lesson 05: <a href="chamber/lesson_4/bom.html">Book of Mormon Chapters</a></li>
+                
+                </ul>
+                <ul class="lessons" id="lesson06">
+                    <li>Lesson 06: <a href="#">Title</a></li>
+                </ul>
+                <ul class="lessons" id="lesson07">
+                    <li>Lesson 07: <a href="#">Title</a></li>
+                </ul>
+                <ul class="lessons" id="lesson08">
+                    <li>Lesson 08: <a href="week-8\table-example\table_example.html">Table</a></li>
+                </ul>
+                <ul class="lessons" id="lesson09">
+                    <li>Lesson 09: <a href="#">Title</a></li>
+                </ul>
+                <ul class="lessons" id="lesson10">
+                    <li>Lesson 10: <a href="#">Title</a></li>
+                </ul>
+                <ul class="lessons" id="lesson11">
+                    <li>Lesson 11: <a href="#">Title</a></li>
+                </ul>
+            </div>
         </div>
-        <nav>
-            <ul>
-                <li>
-                    <a href="index.html">Home</a>
-                </li>
-                <li>
-                    <a href="target_audience.html">Audience</a>
-                </li>
-                <li>
-                    <a href="design.html">Design</a>
-                </li>
-            </ul>
-        </nav>     
-    </header>
-    <main>
-        <div id="content">
-            <h1 class="commerce"> Bellevue Nebraska Chamber of Commerce</h1>
-            <h3> Purpose</h3>
-            <p> The Bellevue Nebraska Chamber of Commerce is meant to help
-                people and busnesses see what bellevue has to offer in its
-                surrounding area.
-            </p>
-            <h3>Logo</h3>
-            <a id="logo"><img src="images/logo.png" alt="Logo Image"></a>
-        </div>
-        </main>
-    <footer>
-        <p> JT Pyle | WDD 230 | &copy; <span id="currentyear"></span></p>
-    </footer>
-</body>
+        <footer>
+            <h3>&copy;<span id="currentyear"></span> JT Pyle, BYU Idaho</h3>
+            <h5>Last updated:<span id="lastupdated"></span></h5>
+        </footer>
+    </body>
+
 </html>
