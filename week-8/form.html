@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Example</title>
+    <style>
+        main{
+            display: flex;
+        }
+        section{
+            width: 50%;
+            margin: 1rem;
+            padding: 1rem;
+            border: 1px solid black;
+            min-width: 400px;
+        }
+        label{display: block;
+        }
+        input{display: block;
+            margin-bottom: .5rem;
+            padding: .5rem;
+        }
+        textarea{
+            display: block;
+            margin-bottom: .5rem;
+        }
+        .myradio{
+            display: inline;
+            margin: 0px 5px 0px 0px;
+        }
+        .mysubmit{
+            font-size: 1.5rem;
+            background-color: lime;
+            color: rgb(15, 9, 1);
+            padding: .5rem;
+        }
+        @media (max-width:800px){
+            main{
+            display: block;}
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section>
+            <form action="GET" action="page2.html">
+                <label>First Name <input name="fname" value="" placeholder="Your First Name" size="30" maxlength="30" required></label>
+                <label>Last Name <input name="lname" value="" placeholder="Your Last Name" size="30" maxlength="30" required></label>
+                <p>Temperature:</p>
+                <label> <input class="myradio" name="temp" type="radio" value="hot">Hot</label>
+                <label> <input class="myradio" name="temp" type="radio" value="warm">Warm</label>
+                <label> <input class="myradio" name="temp" type="radio" value="cool">Cold</label>
+                <label>Description:<textarea name="description" cols="40" rows="5"></textarea></label>
+                <input class=mysubmit type="submit" name="go" value="GO AND DO!"></form>
+            </form>
+        </section>
+        <section>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium exercitationem fugit accusamus dicta libero voluptates eius, cupiditate reiciendis modi culpa asperiores itaque recusandae sint veniam, ipsam eum expedita nostrum voluptatem, porro quod excepturi obcaecati nisi soluta! Dolorem architecto neque, id officiis, quisquam ullam fuga, consequatur eaque eum perspiciatis odit corrupti.
+
+        </section>
+    </main>
+</body>
+</html>
