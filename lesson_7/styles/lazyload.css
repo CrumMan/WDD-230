@@ -3,7 +3,7 @@
     min-height: 50px;
     border:1px solid red;
 }
-body{
+main{
     display: flex;
     justify-content: center;
     justify-items: center;
