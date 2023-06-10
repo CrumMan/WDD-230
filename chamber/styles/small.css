@@ -242,3 +242,24 @@ html, body{
     margin: 0;
     padding: 0;
 }
+/* discover */
+#discover div img{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 10px;
+}
+.demographics{
+    background-color: #f1dac4;
+    color: #493b2a;
+    text-align: center;
+    border-radius: 10px;
+    width: 80%;
+    margin: auto;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.hoverdiscover:hover{
+    box-shadow: 0 5px 35px 0px rgba(155, 153, 153, 0.959);
+}

@@ -7,7 +7,7 @@
     <meta name="description" content="Bellvue Nebraksa chamber of commerce Discover with demographics and photos of city page for WDD230 2023">
     <title>Chamber of Commerce Bellevue Discover Page</title>
     <script src="./scripts/header-footer.js" defer></script>
-    <script src=".scripts/lazyload.js" defer></script>
+    <script src="./scripts/lazyload.js" defer></script>
     <script src="./scripts/lastdays.js" defer></script>
     <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
@@ -53,13 +53,55 @@
         </div>
             <div id="meet-greet"> Come Join us at our weekly meeting at the Hub </div>
     </header>
-    <main>
-        <div id="demographics">
+    <main id="discover">
+        <div class="demographics">
             <h2> Demographics</h2>
-            <h4> Population: 63,015<br>Elevation:1,001 feet</h4>
+            <h4> Population: 63,015 <br> Elevation:1,001 feet</h4>
             <h5>It has been <span id="last-visit"></span> days since your last visit.</h5>
-
         </div>
+         <div>
+            <img src="images/placeholder.jpeg" data-src="images/arial-view.webp" alt="arial-view" class="hoverdiscover">
+            <h4 class="demographics">
+                Age<br>
+                Five and under: 7%
+                Under eightneen:24.4%
+                Adults below sixty five:55.3%
+                Senority Percent: 14.3%
+            </h4>
+        </div>
+         <div>
+            <img src="images/placeholder.jpeg" data-src="images/bellevue_demographicsbridge.jpg" alt="bellevue-bridge" class="hoverdiscover">
+            <h4 class="demographics">Ethnicity<br>
+                    76.8% White<br>
+                    6.1% Black<br>
+                    17% Hispanic<br>
+                    .1% Other
+            </h4>
+        </div>
+         <div>
+            <img src="images/placeholder.jpeg" data-src="images/bellevue-univ.jpg" alt="bellevue-university" class="hoverdiscover">
+        </div>
+        <h4 class="demographics">Schooling Demographics<br>
+           People over the age of 25 who have graduated high school: 92.4 <br>
+           People over the age of 25 with a bachelor's degree: 33.2
+        </h4>
+         <div>
+            <img src="images/placeholder.jpeg" data-src="images/fotenelle-forest.jpg" class="hoverdiscover">
+            <h4 class="demographics">Ethnicity<br>
+                Income:<br>
+                Median Household Income: $73,534<br>
+                Average Income Individual's income: $33,992<br>
+                Percent in poverty: 8.7%
+            </h4>
+        </div>
+        <div >
+            <img src="images/placeholder.jpeg" data-src="images/offutt-air-force-base-entrance.webp" class="hoverdiscover">
+        </div>
+        <h4 class="demographics">
+            Population Characteristics<br>
+            Veterans: 8,193<br>
+            Immigrant (of foriegn birth): 8.7%
+        </h4>
     </main>
     <footer>
         <a class="col1"><img src="images/logo.webp" alt="Logo Image" class='logo'></a>

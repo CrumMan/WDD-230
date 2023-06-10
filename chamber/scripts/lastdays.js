@@ -1,21 +1,15 @@
-const MILLISECONDS_PER_DAY = 24 * 60 * 60 * 1000;
+const MILLIS_PER_DAY = 24 * 60 * 60 * 1000;
+let day = new Date();
+let lastVisitString = localStorage.getItem("lastVisit");
+let visitspan = document.querySelector('#last-visit');
 
-// declaring variables
-let todaysVisit = new Date();
-let lastVisitStr = localStorage.getItem("lastVisit");
-let lastVisitSpan = document.querySelector("#last-vist");
-
-// check if last visit string is null if yes set span 
-// content to 0
-if (lastVisitStr == null) {
-    lastVisitSpan.textContent = "0";
-
-// get todays date and get the diffrance between today
-// and the localy stored date 
-} else {
-    lastVisitDate = new Date(lastVisitStr);
-    daysSinceLastVisit = Math.floor((todaysVisit.getTime() - lastVisitDate.getTime()) / MILLISECONDS_PER_DAY);
-    lastVisitSpan.textContent = daysSinceLastVisit;
+if (lastVisitString==null){        
+    visitspan.textContent = '0'
 }
-
-localStorage.setItem("lastVisit", todaysVisit.toLocaleDateString());
+else{
+    lastVisitDate=new Date(lastVisitString);
+    daysSinceLastVisit = Math.floor((day.getTime() - lastVisitDate.getTime()) / MILLIS_PER_DAY);
+    visitspan.textContent = daysSinceLastVisit;
+}
+localStorage.setItem("lastVisit", day.toLocaleDateString());
+// credit to 
