@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bellvue Nebraksa chamber of commerce Discover with demographics and photos of city page for WDD230 2023">
+    <title>Chamber of Commerce Bellevue Discover Page</title>
+    <script src="./scripts/header-footer.js" defer></script>
+    <script src=".scripts/lazyload.js" defer></script>
+    <script src="./scripts/lastdays.js" defer></script>
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./styles/small.css">
+    <link rel="stylesheet" href="./styles/medium.css">
+    <link rel="stylesheet" href="./styles/large.css">
+</head>
+<body>
+    <header>
+        <div class="header">
+            <a><img src="images/logo.webp" alt="Logo Image"></a>
+            <h1 id="together1" class="together">Bellevue <br> Chamber of Commerce</h1>
+            <div id="header_img_position">
+                <a target='_blank' class="whitespace" href="https://www.facebook.com/BellevueChamberofCommerce/">
+                    <img class="header_img" src='images/facebook_logo.webp' alt="Facebook Logo"></a>
+                <a target='_blank' class="whitespace" href="https://www.instagram.com/">
+                    <img class="header_img" src='images/instagram_logo.webp' alt="Instagram Logo"></a>
+            </div>
+            <p id="dope"><span id="date"></span></p>
+            <nav>
+                <button id="menu_button"> 
+                    <span id="menu_open">&equiv;</span>
+                    <span id="menu_close">X</span>
+                </button>
+                <ul id="navbar">
+                    <li class="active">
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">Discover</a>
+                    </li>
+                    <li>
+                        <a href="#">Directory</a>
+                    </li>
+                    <li>
+                        <a href="#">Join</a>
+                    </li>
+                    <li>
+                        <a href="#">Connect</a>
+                    </li>
+                </ul>
+            </nav> 
+        </div>
+            <div id="meet-greet"> Come Join us at our weekly meeting at the Hub </div>
+    </header>
+    <main>
+        <div id="demographics">
+            <h2> Demographics</h2>
+            <h4> Population: 63,015<br>Elevation:1,001 feet</h4>
+            <h5>It has been <span id="last-visit"></span> days since your last visit.</h5>
+
+        </div>
+    </main>
+    <footer>
+        <a class="col1"><img src="images/logo.webp" alt="Logo Image" class='logo'></a>
+        <h4 class="col2">Bellevue Chamber Of Commerse</h4>
+        <h6 class="col2">1036 Bruin Blvd Suite 119, Bellevue, NE 68005</h6>
+        <h6 id="space" class="col3">Membership@bellevuenebraska.com</h6>
+        <h6 id="space1" class="col3">(402)898-3000</h6>
+        <a target='_blank' class="col12" href='https://www.google.com/maps/place/Greater+Bellevue+Area+Chamber+of+Commerce/@41.1497455,-95.9196875,17z/am=t/data=!3m2!4b1!5s0x8793886b29d64d91:0x485c2053aa491809!4m20!1m13!4m12!1m4!2m2!1d-111.7945856!2d43.8140928!4e1!1m6!1m2!1s0x8793886b33cd2207:0xa36a8329273ac3eb!2sbellevue+ne+chamber+of+commerce!2m2!1d-95.9171126!2d41.1497455!3m5!1s0x8793886b33cd2207:0xa36a8329273ac3eb!8m2!3d41.1497455!4d-95.9171126!16s%2Fg%2F1tq8k1bd'>
+            <img class="header_img" src='images/location.webp' alt="Facebook Logo"> Location Map</a> 
+        <p id="bottom_footer"> JT Pyle | WDD 230 | &copy; <span id="currentyear"></span> Last Updated:<span id='lastupdated'></span></p>
+    </footer>
+</body>
+</html>
