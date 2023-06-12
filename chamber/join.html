@@ -53,9 +53,9 @@
         </div>
             <div id="meet-greet"> Come Join us at our weekly meeting at the Hub </div>
     </header>
-    <body>
         <main id="join_body">
         <table id="membership_table">
+            <caption> Table 1: Account Feature Comparison</caption>
             <thead>
                 <tr>
                     <th colspan="5"> Membership Plans</th>
@@ -91,12 +91,10 @@
                     <td class="check">&check;</td>
                 </tr>
             </tbody>
-            <caption> Table 1: Account Feature Comparison</caption>
         </table>
-        <form action="GET" action="thankyou.html">
         <div id="table">
-                <table>
-                        <thead>
+                <form action="GET">
+                    <!-- <form action="GET" action="thankyou.html"></form> -->
                             <label>First Name <input name="fname" value="" placeholder="Your First Name" size="30" maxlength="30" required></label>
                             <label>Last Name <input name="lname" value="" placeholder="Your Last Name" size="30" maxlength="30" required></label>
                             <label>Buisness Position Title <input name="ptitle" value="" placeholder="Your Position Title" size="30" maxlength="30" required></label>
@@ -107,11 +105,9 @@
                             <label> <input class="membership_level" name="membership" type="radio" value="bronze_membership">Bronze</label>
                             <label> <input class="membership_level" name="membership" type="radio" value="silver_membership">Silver</label>
                             <label> <input class="membership_level" name="membership" type="radio" value="gold_membership">Gold</label>
-                        </thead>
-                    </table>
+                        
                     <label>Description of Business:<textarea name="description" cols="40" rows="5"></textarea></label>
                     <input class=mysubmit type="submit" name="go" value="submit"></form>
-                </form>
             </div>
         </main>
         
