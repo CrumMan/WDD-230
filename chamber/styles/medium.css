@@ -51,9 +51,6 @@
         width: 90%;
         margin: 60px auto 60px auto ;
     }
-    #spotlight img{
-        max-width: 300px;
-    }
     #spotlight_3{
         visibility:hidden;
         display: none;
@@ -116,6 +113,18 @@
     }
     footer{
         margin: 0;
+    }
+    /* join */
+    #join_body{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+    #membership_table{
+        color:#493b2a ;
+        background-color: #f1dac4;
+        grid-column: 2/3;
+        grid-row:1/3;
     }
 
 }

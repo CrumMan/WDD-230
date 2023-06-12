@@ -47,7 +47,6 @@ header{
 .together{
     width: 80%;
     grid-column: 2/3;
-    margin: 5;
     text-align: center; 
     white-space: nowrap;
 }
@@ -146,9 +145,10 @@ div #hero{
     margin-right: auto;
 
 }
-.umami_logo{
+.umami_logo,.flatbed{
     width: 90%;
 }
+
 #hero_text{
     background-color: #493b2a;
     text-align: center;
@@ -263,3 +263,84 @@ html, body{
 .hoverdiscover:hover{
     box-shadow: 0 5px 35px 0px rgba(155, 153, 153, 0.959);
 }
+/* join */
+#join_body{
+    
+    gap: 10px;
+}
+#membership_table{
+    color:#493b2a ;
+    background-color: #f1dac4;
+    grid-column: 2/3;
+    grid-row:1/3;
+}
+#table{
+    color:#493b2a ;
+    background-color: #f1dac4;
+    grid-column: 1/2;
+    grid-row:1/3;
+}
+section{
+    width: 50%;
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid black;
+    min-width: 400px;
+}
+label{display: block;
+}
+input{display: block;
+    margin-bottom: .5rem;
+    padding: .5rem;
+}
+textarea{
+    display: block;
+    margin-bottom: .5rem;
+}
+.membership_level{
+    display: inline;
+    margin: 0px 5px 0px 0px;
+}
+.mysubmit{
+    font-size: 1.5rem;
+    background-color:#f1dac4;
+    color: rgb(15, 9, 1);
+    padding: .5rem;
+}
+
+caption{
+    caption-side: bottom;
+    font-size: .75rem;}
+    thead{
+        background-color: black;
+        color: white;
+    }
+    table{
+        border-collapse: collapse;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        background-color: #f1dac4;
+        column: 2/3;
+    }
+    th{
+        padding:.5rem;
+        border: 1px solid black;
+    }
+    td{
+        text-align: center;
+        padding: .5rem;
+        font-weight: bold;
+        border: 1px gray solid;
+        color:#493b2a;
+    }
+    .check{
+        color:#493b2a;
+    }
+    .x{
+        color:red;
+    }
+    tbody tr:nth-child(even){
+        background-color: lightgrey;
+    }
+    .dark-grey{
+        background-color: rgb(70, 63, 63);
+    }
