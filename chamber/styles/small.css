@@ -343,3 +343,20 @@ caption{
     .dark-grey{
         background-color: rgb(70, 63, 63);
     }
+    /* Directory */
+    .cards{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(1fr, 1fr));
+        border: none;
+    }
+    .cards section{
+        margin: 1rem;
+    }
+    .directory_card{
+        display: flex;
+    width: auto;
+    background-color: #f1dac4;
+    color: #493b2a;
+    padding: 10px;
+    border-radius: 10px;
+    }

@@ -7,8 +7,7 @@
     <meta name="description" content="Bellvue Nebraksa chamber of commerce main page for WDD230 2023">
     <title>Chamber of Commerce Bellevue Home Page</title>
     <script src="./scripts/header-footer.js" defer></script>
-    <script src="./scripts/index.js" defer></script>
-    <script src="./scripts/windchill.js" defer></script>
+    <script src="./scripts/directory.js" defer></script>
     <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="./styles/small.css">
@@ -40,7 +39,7 @@
                         <a href="discover.html">Discover</a>
                     </li>
                     <li>
-                        <a href="directory.html">Directory</a>
+                        <a href="#">Directory</a>
                     </li>
                     <li>
                         <a href="join.html">Join</a>
@@ -53,67 +52,15 @@
         </div>
             <div id="meet-greet"> Come Join us at our weekly meeting at the Hub </div>
     </header>
-    <main>    
-        <div id="content">
-            <div id="hero">
-                <h3 id="hero_text">
-                    Welcome to the Bellevue Chamber of Commerce
-                </h3>
-            <a id="join_hero" href="join.html"><button>Join Now</button></a>
-            <picture class="img">
-                <source class="img" srcset="images/hero_card-200.jpg" media="(min-width:300px) and (max-width:500px)">
-                <source class="img" srcset="images/hero_card-400.jpg" media="(min-width:500px) and (max-width:700px)">
-                <img class="img" src="images/hero_card-600.jpg">
-            </picture>
-            </div>
+    <style> .img{
+        width:100px
+        }
 
-            <div id="join">
-                <div class='join_us'><button class='join_us'>Join Us</button></div>
-                <p>Discover how to Join the Chamber of Commerce and how it will benefit your Organization!</p>
-            </div>
-
-            <div id="event">
-                <h3>
-                  Bellvue West Highschool Graduation
-                </h3>
-                <p>Date: 27th of May 2023</p>
-                <a><img src="images/event.webp" alt="event_picture"></a>
-            </div>
-
-            <div id="weather">
-                <h3>
-                  Weather
-                </h3>
-                <a><img src="images/weather_sunny.webp" alt="weather_sunny"></a>
-                <h4>Temperature:<span id="temperature">&deg;F</span></h4>
-                <h5>Windchill: <span id="windchill"></span> 
-                Windspeed:<span id="windspeed"></span></h5>
-            </div>
-
-            <div id="news_release">
-                <h3>
-                  News Release
-                </h3>
-                <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere omnis ratione accusamus necessitatibus quidem, esse iusto suscipit voluptas culpa amet autem cum officia ipsum, tempore atque dolorem molestiae id. Similique perferendis facilis, rem perspiciatis commodi quia accusamus, non pariatur nihil aliquam libero aliquid corporis voluptatibus temporibus veniam, exercitationem numquam expedita.   
-                </p>
-            </div>
-            <div id="spotlight">
-                <div id="spotlight_1">
-                    <a class="flatbed"><img class="flatbed" src="images/flatbed-express-logo.webp" alt="flatbed_logo"></a>
-                    <p>Need Something Hauled? Call Flatbed Express<br> (402)291-7607 <br>  info@fbxinc.com</p>
-                </div>
-                <div id="spotlight_2">
-                    <a class="umami_logo"><img class="umami_logo" src="images/umami_logo.webp" alt="umami_logo"></a>
-                    <p>Looking for the best asian food to eat in Bellevue Nebraska? Try Umami!<br> (402) 991-8822</p>
-                </div>
-                <div id="spotlight_3">
-                        <a class="red_wing_logo"><img class="red_wing_logo" src="images/red_wing_shoes_logo.webp" alt="red_wing_logo"></a>
-                        <p>The most fly looking shoes in the entire metro area!<br>(402) 614-3134 </p>
-                </div>
-            </div>
-        </div>
-        </main>
+    </style>
+    <main class="directory-main card">
+        <section><button>Grid</button><button>List</button></section>
+        <section class="cards"></section>
+    </main>
     <footer>
         <a class="col1"><img src="images/logo.webp" alt="Logo Image" class='logo'></a>
         <h4 class="col2">Bellevue Chamber Of Commerse</h4>
@@ -125,4 +72,4 @@
         <p id="bottom_footer"> JT Pyle | WDD 230 | &copy; <span id="currentyear"></span> Last Updated:<span id='lastupdated'></span></p>
     </footer>
 </body>
-</html>
+</html>     
