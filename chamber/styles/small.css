@@ -37,6 +37,7 @@ font-family: 'Anonymous Pro', monospace;
 }
 header{
     margin: auto;
+    width: 100%;
 }
 .header{
     display: grid;

@@ -8,7 +8,7 @@
     <title>Chamber of Commerce Bellevue Home Page</title>
     <script src="./scripts/header-footer.js" defer></script>
     <script src="./scripts/index.js" defer></script>
-    <script src="./scripts/windchill.js" defer></script>
+    <script src="./scripts/weatherapi.js" defer></script>
     <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="./styles/small.css">
@@ -61,7 +61,7 @@
                 </h3>
             <a id="join_hero" href="join.html"><button>Join Now</button></a>
             <picture class="img">
-                <source class="img" srcset="images\hero_image_300.jpg" media="(min-width:300px) and (max-width:500px)">
+                <source class="img" srcset="images/hero_image_300.jpg" media="(min-width:300px) and (max-width:500px)">
                 <source class="img" srcset="images/hero_image_500.jpg" media="(min-width:500px) and (max-width:700px)">
                 <img class="img" src="images/hero_image.jpg" alt="hero_card">
             </picture>
@@ -84,10 +84,10 @@
                 <h3>
                   Weather
                 </h3>
-                <a><img src="images/weather_sunny.webp" alt="weather_sunny"></a>
-                <h4>Temperature:<span id="temperature">&deg;F</span></h4>
-                <h5>Windchill: <span id="windchill"></span> 
-                Windspeed:<span id="windspeed"></span></h5>
+                <a><img src="https://openweathermap.org/img/wn/01d@2x.png" alt="weather" id="weather-icon"></a>
+                <h4>Temperature:<span id="temperature"></span>&deg;F</h4>
+                <figcaption></figcaption> 
+                <h4>Windchill: <span id="windchill"></span></h4>
             </div>
 
             <div id="news_release">
