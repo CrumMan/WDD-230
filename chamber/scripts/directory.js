@@ -11,7 +11,7 @@ const displayMembers = (members) => {
     card.classList.add("directory_card")
     card.innerHTML = `<h2>${member.name}</h2>
     <img class='card_img' src=${member.imageURL}>
-    <p>${member.name}</p>
+    <p> ${member.name}</p>
     <p>${member.city}, ${member.state}, ${member.zip}</p>
     <p><a href="${member.url}"> Website</a></p>`
     cards.appendChild(card);

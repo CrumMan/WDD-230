@@ -68,11 +68,14 @@
         grid-row: 4/5;
         margin-left: 5%;
         margin: auto;
+        height: 90%;
     }
     div #weather{
         grid-column: 2/3;
         grid-row: 4/5;
-        width: fit-content;
+        width: 90%;
+        height: 90%;
+        margin: auto;
     }
     div #join{
         visibility: visible;
@@ -116,15 +119,12 @@
     }
     /* join */
     #join_body{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 10px;
+        display: flex;
+        flex-direction: column;
     }
     #membership_table{
         color:#493b2a ;
         background-color: #f1dac4;
-        grid-column: 2/3;
-        grid-row:1/3;
     }
 
 }

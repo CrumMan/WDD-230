@@ -1,7 +1,7 @@
 {
     "members" : [
         {
-            "name": "Umami Asian Cuisine",
+            "name": " Umami Asian Cuisine ",
             "street":"1504 Galvin Rd S,",
             "city": "Bellevue",
             "state":"NE",
@@ -11,7 +11,7 @@
             "adCopy":""
         },
         {
-            "name": "Flatbed Trucking Express ",
+            "name": " Flatbed Trucking Express ",
             "street":"1014 La Platte Rd",
             "city": "Bellevue",
             "state":"NE",
@@ -21,17 +21,17 @@
             "adCopy":""
         },
         {
-            "name": "Bellevue University",
+            "name": " Bellevue University ",
             "street":"1000 Galvin Rd S",
             "city": "Bellevue",
             "state":"NE",
             "zip": 68005,
             "phone":"800-756-7920",
-            "imageURL":"images/bellevue-univ.jpg",
+            "imageURL":"images/bellevue-univ-200.jpg",
             "adCopy":""
         },        
         {
-            "name": "McCallie Associates, Inc.",
+            "name": " McCallie Associates, Inc. ",
             "street":"3906 Raynor Pkwy #200",
             "city": "Bellevue",
             "state":"NE",
@@ -41,7 +41,7 @@
             "adCopy":""
         },        
         {
-            "name": "DJs Dugout",
+            "name": " DJs Dugout ",
             "street":"10308 S 23rd St",
             "city": "Bellevue",
             "state":"NE",
@@ -51,7 +51,7 @@
             "adCopy":""
         },        
         {
-            "name": "Cake Expressions Inc.",
+            "name": " Cake Expressions Inc. ",
             "street":"3503 Samson Way #100",
             "city": "Bellevue",
             "state":"NE",
@@ -61,9 +61,9 @@
             "adCopy":""
         },        
         {
-            "name": "Stella's",
+            "name": " Stella's ",
             "street":"106 Galvin Rd S",
-            "city": "Bellevue",
+            "city": "&nbsp Bellevue ",
             "state":"NE",
             "zip": 68005,
             "phone":"402-291-6088",
@@ -71,9 +71,9 @@
             "adCopy":""
         },        
         {
-            "name": "Beardmore Chevrolet",
+            "name": " Beardmore Chevrolet ",
             "street":"418 Fort Crook Rd N",
-            "city": "Bellevue",
+            "city": " Bellevue",
             "state":"NE",
             "zip": 68005,
             "phone":"402-734-2525",
@@ -81,7 +81,7 @@
             "adCopy":""
         },        
         {
-            "name": "Don & Millies",
+            "name": " Don & Millies ",
             "street":"2208 Pratt Ave",
             "city": "Bellevue",
             "state":"NE",
