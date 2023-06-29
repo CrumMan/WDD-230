@@ -57,14 +57,17 @@ header{
     text-align: center; 
     white-space: nowrap;
 }
-#dope{
+#inactive{
+    color: #493b2a;
+}
+.dope{
     grid-column: 1/5;
     text-align: center;
     margin: auto;
+    color: #493b2a;
     background-color:#f1dac4;
     width: 80%;
     border-radius: 10px;
-    color: #493b2a;
 }
 nav{
     display: block;
@@ -114,7 +117,6 @@ header ul li a{
     padding: 1rem;
     text-align: center;
 }
-
 .nav_bar{
     background-color: #89aae6;
     border-radius: 10px;
@@ -349,7 +351,7 @@ caption{
         color:#493b2a;
     }
     .x{
-        color:red;
+        color:rgb(138, 23, 23);
     }
     tbody tr:nth-child(even){
         background-color:rgb(226, 193, 193);
@@ -382,7 +384,7 @@ caption{
     padding: 10px;
     border-radius: 10px;
     }
-    .active{
-        background-color:#4f5f7c;
-        color: white;
-    }
+#activea{
+    background-color: #b0c9ff;
+    color: rgb(98, 192, 221);
+}
