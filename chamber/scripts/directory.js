@@ -3,7 +3,7 @@ const url = "./data/directory.json";
 // COMPARE THIS TO THE VERSION FOUND IN THE W09 Activity: Working with JSON data and the Fetch API module
 // Using the innerHTML version is a little less Javascript intensive.
 const displayMembers = (members) => {
-  const cards = document.querySelector(".cards"); // select the output container element
+  const cards = document.querySelector(".grid"); // select the output container element
 
   members.forEach((member) => {
     // Create elements to add to the div.cards element
@@ -30,7 +30,20 @@ async function getMemberData() {
     cards.innerHTML = "<section><h1>There was an error loading the data</h1></section>";
   }
 }
-
+function list(){
+  const element=document.getElementById('card')
+  element.classList.remove("grid");
+  element.classList.add("list");
+  
+}
+function grid(){
+  const element=document.getElementById('card')
+  element.classList.remove("list");
+  element.classList.add("grid");
+  
+}
+document.getElementById("grid_but").addEventListener("click", grid);
+document.getElementById("list_but").addEventListener("click", list);
 getMemberData();
 
 // This demonstrates another way to handle the fetch response using THEN instead of ASYNC/AWAIT
