@@ -273,6 +273,7 @@ html, body{
     box-shadow: 0 5px 35px 0px rgba(155, 153, 153, 0.959);
 }
 /* join */
+
 #join_body{
     display: flex;
     flex-direction: column;
@@ -351,7 +352,7 @@ caption{
         color:red;
     }
     tbody tr:nth-child(even){
-        background-color: lightgrey;
+        background-color:rgb(226, 193, 193);
     }
     .dark-grey{
         background-color: rgb(70, 63, 63);
@@ -382,5 +383,6 @@ caption{
     border-radius: 10px;
     }
     .active{
-        background-color:#677ca3;
+        background-color:#4f5f7c;
+        color: white;
     }
