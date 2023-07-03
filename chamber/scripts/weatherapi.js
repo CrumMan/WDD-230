@@ -4,10 +4,10 @@ const weatherIcon = document.querySelector('#weather-icon');
 const captionDesc = document.querySelector('figcaption');
 const currentWind = document.querySelector('#windspeed');
 
-const lat = -53.2996;
-const lon = -68.4575;
-// const appid = "380e81ee1220db3a96f036cca81babcb";x
-const appid = "be32833d7239c63fb1ec02ebf74bf9fc";
+const lat = 41.1515;
+const lon = -95.9177;
+const appid = "380e81ee1220db3a96f036cca81babcb";
+// const appid = "be32833d7239c63fb1ec02ebf74bf9fc";
 const weatherURL = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${appid}&units=imperial`
 
 function displayResults(weatherData) {

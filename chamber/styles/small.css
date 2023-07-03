@@ -168,11 +168,25 @@ div #hero{
     position: absolute;
     right: 10px;
     bottom: 20px;
+    text-decoration:solid;
+    text-size-adjust: 24px;
+    color: black;
+    background-color:white;
+    text-align: center;
+    padding: 10px 10px 0px 10px;
+    border-radius: 10px;
+
 }
 .join_us{
     width: 90%;
     height: 35px;
-    margin: auto;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    background-color: rgb(248, 235, 235);
+    padding: 10px;
+    display: flex;
+    border-radius: 10px;
 }
 #join{
     font-size:1.5em;}
@@ -387,5 +401,5 @@ caption{
 #activea{
     background-color: #b0c9ff;
     color: rgb(98, 192, 221);
-    
+
 }
