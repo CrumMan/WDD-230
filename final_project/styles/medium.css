@@ -1,0 +1,8 @@
+@media screen and (max-width: 850px){
+    #site_map_photo{
+        max-width: 600px;
+    }
+    .wireframe_photos{
+        max-width: 600px;
+    }
+}
