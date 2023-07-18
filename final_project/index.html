@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Bountiful Foods Home Page for Final Project for WDD230 2023">
+        <title>Bountiful Foods Home Page</title>
+        <!-- place js here -->
+        <script src="./scripts/header_footer.js" defer></script>
+        <link rel="icon" href="./favicon.ico">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+        <link rel="stylesheet" href="./styles/small.css">
+        <link rel="stylesheet" href="./styles/medium.css">
+    <link rel="stylesheet" href="./styles/large.css">
+</head>
+<body>
+    <header>
+        <div class="header">
+            <a class="logo"><img class="logo" src="images/foods_logo.png" alt="Logo Image"></a>
+            <div id="header_img_position">
+                <a target='_blank' class="whitespace" href="https://www.facebook.com/">
+                    <img class="header_img" src='images/facebook_logo.webp' alt="Facebook Logo"></a>
+                <a target='_blank' class="whitespace" href="https://www.instagram.com/">
+                    <img class="header_img" src='images/instagram_logo.webp' alt="Instagram Logo"></a>
+            </div>
+            <p class="dope"><span id="date"></span></p>
+            <nav>
+                <button id="menu_button"> 
+                    <span id="menu_open">&equiv;</span>
+                    <span id="menu_close">X</span>
+                </button>
+                <ul id="navbar">
+                    <li id="activea">
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="find_us.html">Where are we?</a>
+                    </li>
+                    <li>
+                        <a href="custom_order.html">Custom Order</a>
+                    </li>
+                </ul>
+            </nav> 
+        </div>
+    </header>
+    <main>
+        <div class="hero_card">
+            <h1 class="hero_txt">Making the world healthier a shake at a time</h1>
+            <picture class="hero_img">
+                <source media="(max-width: 675px)" srcset="images/shakes_small.jpg">
+                <source media="(max-width: 850px)" srcset="images/shakes_medium.jpg">
+                <img class="hero_img" src="images/shakes.jpg" alt="hero-card" loading="lazy">
+            </picture>
+            <h3 class="hero_title">Bountiful Foods</h3>
+            <a class="hero_button" href="custom_order.html">Order Your Shake Today!</a>
+        </div>
+        <div class="about">
+            <h3 class="about_title">Who are we?</h3>
+            <p class="about_text"> Bountiful foods is a company centered around bringng fresh foods to the world a shake at a time! Starting out in a small farm near Carlsbad California we saw this goal and planted our first tree in 1998. Our trees grew and gave the juciest fruits and these fruits we than started making shakes out of. When we harvest we dont harvest just a little but we have bounds of it. Now we can bring freshness into the world a shake at a time. </p>
+            <a class="about_img"><img class="about_img" src="images/about_img.jpg" alt="about img" loading="lazy"></a>
+        </div>
+        <div id="weather">
+            <h3 id="weather_title">
+              Weather
+            </h3>
+            <a class='weather_icon'><img class="weather_icon" src="https://openweathermap.org/img/wn/01d@2x.png" alt="weather" id="weather-icon"></a>
+            <h4 class="weather_text">Temperature:<span id="temperature"></span>&deg;F</h4>
+            <figure class="weather_text"><figcaption></figcaption></figure>
+            <h4 class="weather_text">Windspeed: <span id="windspeed"></span></h4>
+            <h4 class="weather_text">Windchill: <span id="windchill"></span></h4>
+            <h4 class="weather_text">Humidity: <span id="humidity"></span></h4>
+        </div>
+        <div id="newsletter">
+            <a class="newsletter_word"><img id="newsletter_word" src="images/newsletter.jpg" alt="newsletter_photo">
+            <h4 class="newsletter_word">This weeks fresh fruit: Cherries</h4>
+            <p class="newsletter_info">This week we are harvesting bounds of Cherries. These cherries will create the freshest shakes you could have.</p>
+            </a>
+            <a class="cherries"><img class="cherries" src="images/cherries.jpg" alt="cherries_photo" loading="lazy"></a>
+        </div>
+    </main>
+    <footer>
+        <a class="logob"><img class="logob" src="images/foods_logo.png" alt="Logo Image" loading="lazy"></a>
+        <p>Bountiful Foods <br> Here to provide fresh and healthy food options <br> Carlsbad California</p>
+        <p> &copy; Copyright <span id="year">2022(add js)</span> </p>
+    </footer>
+</body>
+</html>
