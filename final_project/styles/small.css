@@ -301,3 +301,31 @@ form{
     display: block;
     margin: 10px auto;
 }
+/* About */
+.apple_img,.cherry_image,.yaso{
+    width: 80%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+.about_photos{
+    display: flex;
+    background-color: #fffdd0;
+    width: 100%;
+    padding-bottom: 15px;
+}
+#about{
+    background-color: #fffdd0;
+    padding: 25px;
+    display: flex;
+    flex-direction:column;
+}
+#about_h1{
+    display: block;
+}
+#yasukochi_farm{
+    display:flex;
+    flex-direction: column;
+    background-color: #fffdd0;
+    padding: 15px;
+    margin:15px auto;
+}
