@@ -13,7 +13,6 @@
         const phone = document.getElementsByName('phonenumber')[0].value;
         const specialInstructions = document.getElementsByName('special_instructions')[0].value;
 
-    alert(`${fruit_1},${fruit_2},${fruit_3},${location},${name},${email},${phone}, ${specialInstructions}`)
     signedUpMessage.textContent = `Thanks for signing up ${name}!`;
 
     // document.querySelector('body').replaceChild(signedUpMessage, form);

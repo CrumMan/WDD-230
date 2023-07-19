@@ -20,12 +20,13 @@ function displayResults(weatherData) {
     weatherIcon.setAttribute('src', iconsrc);
     weatherIcon.setAttribute('alt', desc);
     captionDesc.textContent = desc;
-    const temp =   weatherData.main.temp.toFixed(0)
-    const windspeed = weatherData.wind.speed.toFixed(0)
-    // const humidity = weatherData.current.humidity.toFixed(0)
+    const temp =   weatherData.main.temp.toFixed(0);
+    const windspeed = weatherData.wind.speed.toFixed(0);
+    const humidity = weatherData.main.humidity.toFixed(0);
     currentTemp.innerHTML = `<strong>${temp}</strong>`;
     currentWind.innerHTML = `<strong>${windspeed} MPH</strong>`
-    currentWind.innerHTML = `<strong>${humidity}</strong>`
+    currentHumidity.innerHTML = `<strong>${humidity}%</strong>`
+
 
     getWindChill(temp, windspeed)
   }
