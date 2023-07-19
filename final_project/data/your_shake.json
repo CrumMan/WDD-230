@@ -9,52 +9,52 @@
         },
         {
             "fruit":"banana",
-            "calories":"110",
-            "carbs":"28",
-            "protien":"1",
-            "fat":"0"
+            "calories":110,
+            "carbs":28,
+            "protien":1,
+            "fat":0
         },
         {
             "fruit":"pineapple",
-            "calories":"83",
-            "carbs":"22",
-            "protien":"1",
-            "fat":"0"
+            "calories":83,
+            "carbs":22,
+            "protien":1,
+            "fat":0
         },
         {
             "fruit":"apple",
-            "calories":"0",
-            "carbs":"0",
-            "protien":"0",
-            "fat":"0"
+            "calories":95,
+            "carbs":25,
+            "protien":1,
+            "fat":0
         },
         {
             "fruit":"watermelon",
-            "calories":"95",
-            "carbs":"25",
-            "protien":"1",
-            "fat":"0"
+            "calories":46,
+            "carbs":12,
+            "protien":1,
+            "fat":0.2
         },
         {
             "fruit":"strawberry",
-            "calories":"32",
-            "carbs":"7.7",
-            "protien":".7",
-            "fat":".3"
+            "calories":32,
+            "carbs":7.7,
+            "protien":0.7,
+            "fat":0.3
         },
         {
             "fruit":"blueberry",
-            "calories":"42",
-            "carbs":"10",
-            "protien":".6",
-            "fat":".25"
+            "calories":42,
+            "carbs":10,
+            "protien":0.6,
+            "fat":0.25
         },
         {
             "fruit":"protien isolate",
-            "calories":"120",
-            "carbs":"3",
-            "protien":"25",
-            "fat":".5"
+            "calories":120,
+            "carbs":3,
+            "protien":25,
+            "fat":0.5
         }
     ]
 }

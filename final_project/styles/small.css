@@ -329,3 +329,9 @@ form{
     padding: 15px;
     margin:15px auto;
 }
+section{
+    background-color: #fffdd0;
+    width: 80%;
+    margin: 10px auto;
+    padding: 10px;
+}

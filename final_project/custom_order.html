@@ -8,9 +8,10 @@
         <meta name="description" content="Bountiful Foods Custom Order Page for Final Project for WDD230 2023">
     <title>Bountiful Foods Custom Order</title>
     <!-- place js here -->
+    <script src="./scripts/custom_order.js" defer></script>
     <script src="./scripts/header_footer.js" defer></script>
     <link rel="icon" href="./favicon.ico">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/protien_isolate.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="./styles/small.css">
     <link rel="stylesheet" href="./styles/medium.css">
     <link rel="stylesheet" href="./styles/large.css">
@@ -48,15 +49,14 @@
             </nav> 
         </div>
     </header>
-   <form class="form" action="GET">
-    <!-- <form action="GET" action="thankyou.html"></form> -->
+   <form class="form" id="form" action="thankyou.html" meathod="PUSH">
             <h1>Custom Drink Order Form</h1>
         <a class="smoothie"><img class="smoothie" src="images/banana-smoothie.webp" alt="banana smoothie"></a>
-            <label>Name: <input name="name" value="" placeholder="Your Name" size="50" maxlength="50" required></label>
+            <label for="name">Name: <input name="name" type="text" placeholder="Your Name" size="50" maxlength="50" required></label>
             <label><br>Email: <input type="email" name="email" value="" placeholder="Your Email" size="50" maxlength="50" required></label>
             <label>Phone Number: <input type="tel" name="phonenumber" value="" placeholder="Your Phone Number" size="50" maxlength="50" required></label>
             <h4>Fruit Selection</h4>
-            <select>
+            <select onkeyup="formChanged()" onchange="formChanged()" name="fruit_1">
                 <option value="0">Select Fruit 1</option>
                 <option value="cherry">Cherry</option>
                 <option value="banana">Banana</option>
@@ -65,20 +65,20 @@
                 <option value="watermelon">Watermelon</option>
                 <option value="strawberry">Strawberry</option>
                 <option value="blueberry">Blueberry</option>
-                <option value="protien_isolate">Protien Isolate</option>
+                <option value="protien isolate">Protien Isolate</option>
             </select>
-            <select>
+            <select onkeyup="formChanged()" onchange="formChanged()" name="fruit_2">
                 <option value="0">Select Fruit 2</option>
                 <option value="cherry">Cherry</option>
                 <option value="banana">Banana</option>
-                <option value="pineapple">5</option>
+                <option value="pineapple">Pineapple</option>
                 <option value="apple">Apple</option>
                 <option value="watermelon">Watermelon</option>
                 <option value="strawberry">Strawberry</option>
                 <option value="blueberry">Blueberry</option>
-                <option value="protien_isolate">Protien Isolate</option>
+                <option value="protien isolate">Protien Isolate</option>
               </select>
-            <select>
+            <select onkeyup="formChanged()" onchange="formChanged()" name="fruit_3">
                 <option value="0">Select Fruit 3</option>
                 <option value="cherry">Cherry</option>
                 <option value="banana">Banana</option>
@@ -87,17 +87,29 @@
                 <option value="watermelon">Watermelon</option>
                 <option value="strawberry">Strawberry</option>
                 <option value="blueberry">Blueberry</option>
-                <option value="protien_isolate">Protien Isolate</option>
+                <option value="protien isolate">Protien Isolate</option>
               </select>
               <br>
+              <h3>What location would you like to send your order too? &#40;remember to check when the food 
+                truck will be near you when you order&#41;</h3>
+              <select onkeyup="formChanged()" onchange="formChanged()" name="location" required>
+                <option>locations</option>
+                <option value="Carlsbad">Carlsbad California &#40;Permanent&#41;</option>
+                <option value="San Francisco">San Francisco</option>
+                <option value="Salem">Salem Oregan</option>
+                <option value="Reno">Reno Nevada</option>
+                <option value="Lasvegas">Las Vegas Nevada</option>
+              </select>
+              <br><br>
         
-    <label>Special Instructions:<textarea name="special_instructions" cols="40" rows="5"></textarea></label>
-    <input class=mysubmit type="submit" name="go" value="submit">
+        <label>Special Instructions:<textarea name="special_instructions" cols="40" rows="5"></textarea></label>
+        <Label value=" Fuck you (Thank You Spencer)" type="hidden"></Label>
+        <input onsubmit="formChanged()"  href="thankyou.html" id=mysubmit type="submit" name="go" value="submit">
     </form>
     <footer>
         <a class="logob"><img class="logob" src="images/foods_logo.png" alt="Logo Image" loading="lazy"></a>
         <p>Bountiful Foods <br> Here to provide fresh and healthy food options <br> Carlsbad California</p>
-        <p> &copy; Copyright <span id="year">2022(add js)</span> </p>
+        <p> &copy; Copyright <span id="currentyear">2022(add js)</span> </p>
     </footer>
 </body>
 </html>

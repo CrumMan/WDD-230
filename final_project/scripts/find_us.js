@@ -1,15 +1,14 @@
 const url = "data/where_are_we.json";
 
-// COMPARE THIS TO THE VERSION FOUND IN THE W09 Activity: Working with JSON data and the Fetch API module
-// Using the innerHTML version is a little less Javascript intensive.
 const displayMembers = (locations) => {
   const cards = document.querySelector(".grid"); // select the output container element
 
-  locations.forEach((member) => {
+  locations.forEach((locations ) => {
     // Create elements to add to the div.cards element
     let card = document.createElement("section");
     card.classList.add("find_us_card")
     card.innerHTML = `<h2>${locations.locations}</h2>
+    <p> Dates Here: ${locations.dates}</p>
     <img class='card_img' src=${locations.imageURL}>
     <p> ${locations.type}</p>`
     cards.appendChild(card);

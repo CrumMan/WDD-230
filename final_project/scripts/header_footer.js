@@ -1,3 +1,7 @@
+const now =new Date();
+currentyear= document.querySelector("#currentyear");
+currentyear.textContent = now.getFullYear();
+
 menubutton = document.querySelector("#menu_button")
 
 menubutton.addEventListener('click', () =>

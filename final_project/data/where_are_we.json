@@ -8,28 +8,28 @@
             "adCopy":""
         },
         {
-            "location": "San Francisco California",
+            "locations": "San Francisco California",
             "dates":"7/22/23-7/29/23" ,
             "type":"Shake Truck",
             "imgurl":"",
             "adCopy":""
         },
         {
-            "location": "Salem Oregan",
+            "locations": "Salem Oregan",
             "dates":"7/30/23-8/6/23" ,
             "type":"Shake Truck",
             "imgurl":"",
             "adCopy":""
         },
         {
-            "location": "Reno Nevada",
+            "locations": "Reno Nevada",
             "dates":"8/6/23-8/13/23" ,
             "type":"Shake Truck",
             "imgurl":"",
             "adCopy":""
         },
         {
-            "location": "Las Vegas Nevada",
+            "locations": "Las Vegas Nevada",
             "dates":"8/14/23-8/21/23" ,
             "type":"Shake Truck",
             "imgurl":"",
