@@ -335,3 +335,9 @@ section{
     margin: 10px auto;
     padding: 10px;
 }
+#thank_you{
+    background-color: #fffdd0;
+    width: 80%;
+    padding: 10px;
+    margin: 10px auto;
+}

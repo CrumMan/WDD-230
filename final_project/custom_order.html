@@ -8,7 +8,6 @@
         <meta name="description" content="Bountiful Foods Custom Order Page for Final Project for WDD230 2023">
     <title>Bountiful Foods Custom Order</title>
     <!-- place js here -->
-    <script src="./scripts/custom_order.js" defer></script>
     <script src="./scripts/header_footer.js" defer></script>
     <link rel="icon" href="./favicon.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
@@ -52,63 +51,166 @@
    <form class="form" id="form" action="thankyou.html" meathod="PUSH">
             <h1>Custom Drink Order Form</h1>
         <a class="smoothie"><img class="smoothie" src="images/banana-smoothie.webp" alt="banana smoothie"></a>
-            <label for="name">Name: <input name="name" type="text" placeholder="Your Name" size="50" maxlength="50" required></label>
+            <label for="name">Name: <input name="names" type="text" placeholder="Your Name" size="50" maxlength="50" required></label>
             <label><br>Email: <input type="email" name="email" value="" placeholder="Your Email" size="50" maxlength="50" required></label>
             <label>Phone Number: <input type="tel" name="phonenumber" value="" placeholder="Your Phone Number" size="50" maxlength="50" required></label>
             <h4>Fruit Selection</h4>
-            <select onkeyup="formChanged()" onchange="formChanged()" name="fruit_1">
-                <option value="0">Select Fruit 1</option>
-                <option value="cherry">Cherry</option>
-                <option value="banana">Banana</option>
-                <option value="pineapple">Pineapple</option>
-                <option value="apple">Apple</option>
-                <option value="watermelon">Watermelon</option>
-                <option value="strawberry">Strawberry</option>
-                <option value="blueberry">Blueberry</option>
-                <option value="protien isolate">Protien Isolate</option>
+            <select   name="fruit_1">
+                <option value=0>Select Fruit 1</option>
+                <option value="Persimmon">Persimmon</option>
+                <option value="Strawberry">Strawberry</option>
+                <option value="Banana">Banana</option>
+                <option value="Tomato">Tomato</option>
+                <option value="Pear">Pear</option>
+                <option value="Durian">Durian</option>
+                <option value="Blackberry">Blackberry</option>
+                <option value="Lingonberry">Lingonberry</option>
+                <option value="Kiwi">Kiwi</option>
+                <option value="Lychee">Lychee</option>
+                <option value="Pineapple">Pineapple</option>
+                <option value="Fig">Fig</option>
+                <option value="Gooseberry">Gooseberry</option>
+                <option value="Passionfruit">Passionfruit</option>
+                <option value="Plum">Plum</option>
+                <option value="Orange">Orange</option>
+                <option value="GreenApple">Green Apple</option>
+                <option value="Raspberry">Raspberry</option>
+                <option value="Watermelon">Watermelon</option>
+                <option value="Lemon">Lemon</option>
+                <option value="Mango">Mango</option>
+                <option value="Blueberry">Blueberry</option>
+                <option value="Apple">Apple</option>
+                <option value="Guava">Guava</option>
+                <option value="Apricot">Apricot</option>
+                <option value="Papaya">Papaya</option>
+                <option value="Melon">Melon</option>
+                <option value="Tangerine">Tangerine</option>
+                <option value="Pitahaya">Pitahaya</option>
+                <option value="Lime">Lime</option>
+                <option value="Pomegranate">Pomegranate</option>
+                <option value="Dragonfruit">Dragonfruit</option>
+                <option value="Grape">Grape</option>
+                <option value="Morus">Morus</option>
+                <option value="Feijoa">Feijoa</option>
+                <option value="Avocado">Avocado</option>
+                <option value="Kiwifruit">Kiwifruit</option>
+                <option value="Cranberry">Cranberry</option>
+                <option value="Cherry">Cherry</option>
+                <option value="Peach">Peach</option>
+                <option value="Jackfruit">Jackfruit</option>
+                <option value="Horned Melon">Horned Melon</option>
+                
             </select>
-            <select onkeyup="formChanged()" onchange="formChanged()" name="fruit_2">
-                <option value="0">Select Fruit 2</option>
-                <option value="cherry">Cherry</option>
-                <option value="banana">Banana</option>
-                <option value="pineapple">Pineapple</option>
-                <option value="apple">Apple</option>
-                <option value="watermelon">Watermelon</option>
-                <option value="strawberry">Strawberry</option>
-                <option value="blueberry">Blueberry</option>
-                <option value="protien isolate">Protien Isolate</option>
-              </select>
-            <select onkeyup="formChanged()" onchange="formChanged()" name="fruit_3">
-                <option value="0">Select Fruit 3</option>
-                <option value="cherry">Cherry</option>
-                <option value="banana">Banana</option>
-                <option value="pineapple">Pineapple</option>
-                <option value="apple">Apple</option>
-                <option value="watermelon">Watermelon</option>
-                <option value="strawberry">Strawberry</option>
-                <option value="blueberry">Blueberry</option>
-                <option value="protien isolate">Protien Isolate</option>
+            <select   name="fruit_2">
+                <option value=0>Select Fruit 1</option>
+                <option value="Persimmon">Persimmon</option>
+                <option value="Strawberry">Strawberry</option>
+                <option value="Banana">Banana</option>
+                <option value="Tomato">Tomato</option>
+                <option value="Pear">Pear</option>
+                <option value="Durian">Durian</option>
+                <option value="Blackberry">Blackberry</option>
+                <option value="Lingonberry">Lingonberry</option>
+                <option value="Kiwi">Kiwi</option>
+                <option value="Lychee">Lychee</option>
+                <option value="Pineapple">Pineapple</option>
+                <option value="Fig">Fig</option>
+                <option value="Gooseberry">Gooseberry</option>
+                <option value="Passionfruit">Passionfruit</option>
+                <option value="Plum">Plum</option>
+                <option value="Orange">Orange</option>
+                <option value="GreenApple">Green Apple</option>
+                <option value="Raspberry">Raspberry</option>
+                <option value="Watermelon">Watermelon</option>
+                <option value="Lemon">Lemon</option>
+                <option value="Mango">Mango</option>
+                <option value="Blueberry">Blueberry</option>
+                <option value="Apple">Apple</option>
+                <option value="Guava">Guava</option>
+                <option value="Apricot">Apricot</option>
+                <option value="Papaya">Papaya</option>
+                <option value="Melon">Melon</option>
+                <option value="Tangerine">Tangerine</option>
+                <option value="Pitahaya">Pitahaya</option>
+                <option value="Lime">Lime</option>
+                <option value="Pomegranate">Pomegranate</option>
+                <option value="Dragonfruit">Dragonfruit</option>
+                <option value="Grape">Grape</option>
+                <option value="Morus">Morus</option>
+                <option value="Feijoa">Feijoa</option>
+                <option value="Avocado">Avocado</option>
+                <option value="Kiwifruit">Kiwifruit</option>
+                <option value="Cranberry">Cranberry</option>
+                <option value="Cherry">Cherry</option>
+                <option value="Peach">Peach</option>
+                <option value="Jackfruit">Jackfruit</option>
+                <option value="Horned Melon">Horned Melon</option>
+            </select>
+            <select   name="fruit_3">
+                <option value=0>Select Fruit 1</option>
+                <option value="Persimmon">Persimmon</option>
+                <option value="Strawberry">Strawberry</option>
+                <option value="Banana">Banana</option>
+                <option value="Tomato">Tomato</option>
+                <option value="Pear">Pear</option>
+                <option value="Durian">Durian</option>
+                <option value="Blackberry">Blackberry</option>
+                <option value="Lingonberry">Lingonberry</option>
+                <option value="Kiwi">Kiwi</option>
+                <option value="Lychee">Lychee</option>
+                <option value="Pineapple">Pineapple</option>
+                <option value="Fig">Fig</option>
+                <option value="Gooseberry">Gooseberry</option>
+                <option value="Passionfruit">Passionfruit</option>
+                <option value="Plum">Plum</option>
+                <option value="Orange">Orange</option>
+                <option value="GreenApple">Green Apple</option>
+                <option value="Raspberry">Raspberry</option>
+                <option value="Watermelon">Watermelon</option>
+                <option value="Lemon">Lemon</option>
+                <option value="Mango">Mango</option>
+                <option value="Blueberry">Blueberry</option>
+                <option value="Apple">Apple</option>
+                <option value="Guava">Guava</option>
+                <option value="Apricot">Apricot</option>
+                <option value="Papaya">Papaya</option>
+                <option value="Melon">Melon</option>
+                <option value="Tangerine">Tangerine</option>
+                <option value="Pitahaya">Pitahaya</option>
+                <option value="Lime">Lime</option>
+                <option value="Pomegranate">Pomegranate</option>
+                <option value="Dragonfruit">Dragonfruit</option>
+                <option value="Grape">Grape</option>
+                <option value="Morus">Morus</option>
+                <option value="Feijoa">Feijoa</option>
+                <option value="Avocado">Avocado</option>
+                <option value="Kiwifruit">Kiwifruit</option>
+                <option value="Cranberry">Cranberry</option>
+                <option value="Cherry">Cherry</option>
+                <option value="Peach">Peach</option>
+                <option value="Jackfruit">Jackfruit</option>
+                <option value="Horned Melon">Horned Melon</option>
               </select>
               <br>
               <h3>What location would you like to send your order too? &#40;remember to check when the food 
                 truck will be near you when you order&#41;</h3>
-              <select onkeyup="formChanged()" onchange="formChanged()" name="location" required>
+              <select   name="location" required>
                 <option>locations</option>
-                <option value="Carlsbad">Carlsbad California &#40;Permanent&#41;</option>
-                <option value="San Francisco">San Francisco</option>
-                <option value="Salem">Salem Oregan</option>
-                <option value="Reno">Reno Nevada</option>
-                <option value="Lasvegas">Las Vegas Nevada</option>
+                <option value="Carlsbad California Shake Shack">Carlsbad California &#40;Permanent&#41;</option>
+                <option value="San Francisco California Shake Truck">San Francisco</option>
+                <option value="Salem Oregan Shake Truck">Salem Oregan</option>
+                <option value="Reno Nevada Shake Truck">Reno Nevada</option>
+                <option value="Lasvegas Nevada Shake Truck">Las Vegas Nevada</option>
               </select>
+              <input hidden name="hide" value="1B234E6">
               <br><br>
         
         <label>Special Instructions:<textarea name="special_instructions" cols="40" rows="5"></textarea></label>
-        <Label value=" Fuck you (Thank You Spencer)" type="hidden"></Label>
-        <input onsubmit="formChanged()"  href="thankyou.html" id=mysubmit type="submit" name="go" value="submit">
+        <input  href="thankyou.html" id=mysubmit type="submit" name="go" value="submit">
     </form>
     <footer>
         <a class="logob"><img class="logob" src="images/foods_logo.png" alt="Logo Image" loading="lazy"></a>
-        <p>Bountiful Foods <br> Here to provide fresh and healthy food options <br> Carlsbad California</p>
+        <p>Bountiful Foods <br> Here to provide fresh and healthy food options <br>233 W Foo Yoo Ln 83440<br> Carlsbad California</p>
         <p> &copy; Copyright <span id="currentyear">2022(add js)</span> </p>
     </footer>
 </body>
