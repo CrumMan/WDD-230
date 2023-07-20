@@ -4,35 +4,35 @@
             "locations": "Carlsbad California",
             "dates":"Permanent" ,
             "type":"Shake Shack",
-            "imgurl":"",
+            "imgurl":"images/shake_shack.jpg",
             "adCopy":""
         },
         {
             "locations": "San Francisco California",
             "dates":"7/22/23-7/29/23" ,
             "type":"Shake Truck",
-            "imgurl":"",
+            "imgurl":"images/shake_truck.jpg",
             "adCopy":""
         },
         {
             "locations": "Salem Oregan",
             "dates":"7/30/23-8/6/23" ,
             "type":"Shake Truck",
-            "imgurl":"",
+            "imgurl":"images/shake_truck.jpg",
             "adCopy":""
         },
         {
             "locations": "Reno Nevada",
             "dates":"8/6/23-8/13/23" ,
             "type":"Shake Truck",
-            "imgurl":"",
+            "imgurl":"images/shake_truck.jpg",
             "adCopy":""
         },
         {
             "locations": "Las Vegas Nevada",
             "dates":"8/14/23-8/21/23" ,
             "type":"Shake Truck",
-            "imgurl":"",
+            "imgurl":"images/shake_truck.jpg",
             "adCopy":""
         }
     ]

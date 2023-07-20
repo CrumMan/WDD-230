@@ -9,7 +9,7 @@ const displayMembers = (locations) => {
     card.classList.add("find_us_card")
     card.innerHTML = `<h2>${locations.locations}</h2>
     <p> Dates Here: ${locations.dates}</p>
-    <img class='card_img' src=${locations.imageURL}>
+    <img class='card_img' src=${locations.imgurl}>
     <p> ${locations.type}</p>`
     cards.appendChild(card);
   }); // end of forEach loop
