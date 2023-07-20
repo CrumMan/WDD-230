@@ -48,15 +48,15 @@
             </nav> 
         </div>
     </header>
-   <form class="form" id="form" action="thankyou.html" meathod="PUSH">
+   <form class="form" id="form" action="thankyou.html" method="get">
             <h1>Custom Drink Order Form</h1>
         <a class="smoothie"><img class="smoothie" src="images/banana-smoothie.webp" alt="banana smoothie"></a>
-            <label for="name">Name: <input name="names" type="text" placeholder="Your Name" size="50" maxlength="50" required></label>
+            <label for="name">Name: <input id="name" name="names" type="text" placeholder="Your Name" size="50" maxlength="50" required></label>
             <label><br>Email: <input type="email" name="email" value="" placeholder="Your Email" size="50" maxlength="50" required></label>
             <label>Phone Number: <input type="tel" name="phonenumber" value="" placeholder="Your Phone Number" size="50" maxlength="50" required></label>
             <h4>Fruit Selection</h4>
-            <select   name="fruit_1">
-                <option value=0>Select Fruit 1</option>
+            <select name="fruit_1" required>
+                <option value="">Select Fruit 1</option>
                 <option value="Persimmon">Persimmon</option>
                 <option value="Strawberry">Strawberry</option>
                 <option value="Banana">Banana</option>
@@ -101,8 +101,8 @@
                 <option value="Horned Melon">Horned Melon</option>
                 
             </select>
-            <select   name="fruit_2">
-                <option value=0>Select Fruit 1</option>
+            <select name="fruit_2" required>
+                <option value="">Select Fruit 1</option>
                 <option value="Persimmon">Persimmon</option>
                 <option value="Strawberry">Strawberry</option>
                 <option value="Banana">Banana</option>
@@ -146,8 +146,8 @@
                 <option value="Jackfruit">Jackfruit</option>
                 <option value="Horned Melon">Horned Melon</option>
             </select>
-            <select   name="fruit_3">
-                <option value=0>Select Fruit 1</option>
+            <select name="fruit_3" required>
+                <option value="">Select Fruit 1</option>
                 <option value="Persimmon">Persimmon</option>
                 <option value="Strawberry">Strawberry</option>
                 <option value="Banana">Banana</option>
@@ -194,8 +194,8 @@
               <br>
               <h3>What location would you like to send your order too? &#40;remember to check when the food 
                 truck will be near you when you order&#41;</h3>
-              <select   name="location" required>
-                <option>locations</option>
+              <select name="location" required>
+                <option value="">locations</option>
                 <option value="Carlsbad California Shake Shack">Carlsbad California &#40;Permanent&#41;</option>
                 <option value="San Francisco California Shake Truck">San Francisco</option>
                 <option value="Salem Oregan Shake Truck">Salem Oregan</option>
@@ -206,7 +206,7 @@
               <br><br>
         
         <label>Special Instructions:<textarea name="special_instructions" cols="40" rows="5"></textarea></label>
-        <input  href="thankyou.html" id=mysubmit type="submit" name="go" value="submit">
+        <input  data-href="thankyou.html" id=mysubmit type="submit" name="go" value="submit">
     </form>
     <footer>
         <a class="logob"><img class="logob" src="images/foods_logo.png" alt="Logo Image" loading="lazy"></a>

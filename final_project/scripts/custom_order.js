@@ -69,7 +69,10 @@ async function main(){
     const sugar = sugar_total(filtered_fruit_1_nutririons,filtered_fruit_2_nutririons,filtered_fruit_3_nutririons)
     const msg = ("Thank you " + names + " for ordering your shake at the " + locations+"!" + " You ordered a "+ fruit_1 +" "+ fruit_2+" "+ fruit_3 +" shake!"+ " Your order will be prepared with conformation code " + hidden)
     const msg2 = (" Your Nutrients for your shake has " + calories + " Calories. It has also has " + carbohydrates + " grams of carbohydrates, " + fat +" grams of fat, " + protien + " grams of protien, and " + sugar + " grams of sugar")
+    const msg3 = ("Special Instructions:" + special_instructions)
     document.querySelector('#text').textContent = msg
     document.querySelector('#text2').textContent = msg2
+    document.querySelector('#text3').textContent = msg3
+
 }
 main()
